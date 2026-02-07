@@ -296,6 +296,19 @@
             position: relative;
         }
 
+        .hero-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid var(--accent-blue);
+            box-shadow: 0 0 30px var(--glow);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
         .hero-content h1 {
             font-size: 4rem;
             font-weight: 700;
@@ -1007,6 +1020,7 @@
         <!-- Hero -->
         <section id="home" class="hero">
             <div class="hero-content">
+                <img src="profile.jpg" alt="Sophie Lin" class="hero-avatar">
                 <h1>Sophie Lin</h1>
                 <div class="subtitle">Software Engineer | ML Engineer | Product Manager</div>
                 <p class="description">
